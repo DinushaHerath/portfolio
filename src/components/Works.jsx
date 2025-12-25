@@ -200,7 +200,7 @@ const Works = () => {
         <button
           onClick={() => {
             const container = document.getElementById('projects-container');
-            container.scrollBy({ left: -400, behavior: 'smooth' });
+            if (container) container.scrollBy({ left: -400, behavior: 'smooth' });
           }}
           className='absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-cyan-400/20 hover:bg-cyan-400/40 border-2 border-cyan-400/50 rounded-full flex items-center justify-center text-white text-2xl transition-all hover:scale-110'
         >
@@ -209,7 +209,7 @@ const Works = () => {
         <button
           onClick={() => {
             const container = document.getElementById('projects-container');
-            container.scrollBy({ left: 400, behavior: 'smooth' });
+            if (container) container.scrollBy({ left: 400, behavior: 'smooth' });
           }}
           className='absolute right-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-cyan-400/20 hover:bg-cyan-400/40 border-2 border-cyan-400/50 rounded-full flex items-center justify-center text-white text-2xl transition-all hover:scale-110'
         >
