@@ -29,8 +29,8 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+      } w-full flex items-center py-5 fixed top-0 z-20 transition-all duration-300 ${
+        scrolled ? "bg-black-100/95 backdrop-blur-sm shadow-lg shadow-[#00d9ff]/20" : "bg-black-100/50 backdrop-blur-sm"
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -42,9 +42,9 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             Dinusha &nbsp;
-            <span className='sm:block hidden'> | Herath</span>
+            <span className='sm:block hidden'> Herath</span>
           </p>
         </Link>
 
@@ -53,8 +53,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === nav.title ? "text-white" : "text-white"
+              } hover:text-white hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.9)] text-[18px] font-medium cursor-pointer transition-all duration-300`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -80,8 +80,8 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
-                  }`}
+                    active === nav.title ? "text-white" : "text-white"
+                  } hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] transition-all duration-300`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);

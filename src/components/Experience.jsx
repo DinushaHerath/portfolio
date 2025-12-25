@@ -5,12 +5,12 @@ import { SectionWrapper } from "../hoc";
 import { textVariant, fadeIn } from "../utils/motion";
 import { 
   FaJava, FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaNodeJs, 
-  FaLaravel, FaFigma, FaGitAlt, FaDocker, FaPhp, FaDatabase, FaCode 
+  FaLaravel, FaFigma, FaGitAlt, FaPhp, FaDatabase, FaCode 
 } from "react-icons/fa";
 import { 
   SiTypescript, SiJavascript, SiTailwindcss, SiMongodb, 
-  SiMysql, SiPostgresql, SiAdobeillustrator, SiAdobephotoshop,
-  SiCplusplus, SiDotnet, SiGimp
+  SiMysql, SiAdobeillustrator, SiAdobephotoshop,
+  SiCplusplus, SiGimp, SiThreedotjs
 } from "react-icons/si";
 
 const CodeBackground = () => {
@@ -101,6 +101,8 @@ const Experience = () => {
       title: "Web Development",
       skills: [
         { name: "React.js", icon: FaReact, color: "#61DAFB" },
+        { name: "React Native", icon: FaReact, color: "#61DAFB" },
+        { name: "Three.js", icon: SiThreedotjs, color: "#000000" },
         { name: "HTML5", icon: FaHtml5, color: "#E34F26" },
         { name: "CSS3", icon: FaCss3Alt, color: "#1572B6" },
         { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
@@ -111,9 +113,9 @@ const Experience = () => {
       title: "Backend & Frameworks",
       skills: [
         { name: "Node.js", icon: FaNodeJs, color: "#339933" },
-        { name: ".NET", icon: SiDotnet, color: "#512BD4" },
         { name: "Laravel", icon: FaLaravel, color: "#FF2D20" },
         { name: "Express.js", icon: FaNodeJs, color: "#000000" },
+          
       ],
     },
     {
@@ -122,7 +124,7 @@ const Experience = () => {
         { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
         { name: "MySQL", icon: SiMysql, color: "#4479A1" },
         { name: "MSSQL", icon: FaDatabase, color: "#CC2927" },
-        { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+       
       ],
     },
     {
@@ -138,8 +140,9 @@ const Experience = () => {
       title: "IDEs & Tools",
       skills: [
         { name: "VS Code", icon: FaCode, color: "#007ACC" },
+        { name: "Code::Blocks", icon: FaCode, color: "#00599C" },
         { name: "Git", icon: FaGitAlt, color: "#F05032" },
-        { name: "Docker", icon: FaDocker, color: "#2496ED" },
+      
       ],
     },
   ];

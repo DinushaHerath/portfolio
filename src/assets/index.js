@@ -28,7 +28,20 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
+import jobportal from "./jobportal.png";
+import crick from "./crick.png";
+import momcare from "./momcare.png";
 import tripguide from "./tripguide.png";
+import uom from "./uom.jpg";
+import gift from "./gift.png";
+import royal from "./royal.png";
+import pf from "./pf.jpeg";
+
+import intec from "./intec.jpeg";
+import fittune from "./fittune.jpeg";
+import pm from "./pm.jpeg";
+import enigma from "./enigma.jpeg";
+import futuro from "./futuro.jpeg";
 
 export {
   logo,
@@ -58,5 +71,17 @@ export {
   tesla,
   carrent,
   jobit,
+  jobportal,
+  crick,
+  momcare,
   tripguide,
+  uom,
+  gift,
+  pf,
+  royal,
+  intec,
+  fittune,
+  pm,
+  enigma,
+  futuro,
 };
